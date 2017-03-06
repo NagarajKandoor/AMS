@@ -1,0 +1,122 @@
++
+1>faculty:
+create table faculty
+(
+  fid varchar(25) not null primary key,
+  fname varchar(25),
+  dno varchar(10) ,
+  address varchar(30),
+  fpassword varchar(20),
+  contact_no varchar(12),
+  qualification varchar(30),
+  email_id varchar(20),
+   desig varchar(35),
+  foreign key(dno) references department(dno) on delete cascade
+)
+
+2>Exam:-
+create table exam
+(
+  edate varchar(15) primary key not null,
+  time varchar(10),
+  type varchar(10)
+)
+
+3>Event:-
+
+create table event
+( 
+  eid varchar(20) not null,
+   usn varchar(10) not null, 
+  fid varchar(10)not null,
+  occasion varchar(30),
+  coordinator varchar(40),
+  date date,
+  no_of_day int,
+  expensive varchar(40),
+  primary key(usn,fid,eid),
+  foreign key(usn) references student(usn) on delete cascade,
+  foreign key(fid) references faculty(fid) on delete cascade
+)
+
+
+
+5>course:-
+create table course
+(
+ cid varchar(10) primary key not null,
+ cname varchar(25),
+ sem varchar(10),
+ fid varchar(10),
+ dno varchar(10),
+ foreign key(dno) references department(dno) on delete cascade,
+ foreign key(fid)references faculty(fid) on delete cascade
+)
+
+6>Student:-
+create table student
+(
+  usn varchar(10) not null primary key ,
+  fname varchar(25),
+  lname varchar(25),
+  mname varchar(25),
+  branch varchar(15),
+  address varchar(80),
+  dob varchar(10),
+  sex varchar(10),
+  sem varchar(10),
+  mobno varchar(12),
+  dno varchar(10),
+  password varchar(10),
+  foreign key(dno) references department(dno) on delete cascade
+  
+)
+
+7>department:-
+create table department
+(
+  dno varchar(10) not null primary key,
+  dname varchar(35),
+  hod varchar(35),
+  dpassword varchar(20)
+)
+
+
+
+9>attedence:-
+create table attedence
+(
+  usn varchar(10) not null, 
+  fid varchar(10) not null, 
+  cid varchar(10) not null,
+  date varchar(10) not null ,
+  total_class varchar(10),
+  attended_class varchar(10),
+  primary key(usn,fid,cid,date),
+  foreign key(usn) references student(usn) on delete cascade,
+  foreign key(fid) references faculty(fid) on delete cascade,
+  foreign key(cid) references course(cid) on delete cascade
+)
+
+10>result:-
+create table result
+(
+  usn varchar(10) not null, 
+  edate varchar(10) not null, 
+  cid varchar(10) not null,
+  sem varchar(10) not null,  
+  primary key(usn,edate,cid,sem),
+  score varchar(10),
+  foreign key(usn) references student(usn) on delete cascade,
+  foreign key(edate) references exam(edate) on delete cascade,
+  foreign key(cid) references course(cid) on delete cascade
+)
+11)enroll
+create table enroll(usn varchar(15) not null,
+cid varchar(5) not null,
+cname varchar(25) not null,
+primary key(usn,cid),
+foreign key(usn)references student(usn) on delete cascade,
+foreign key(cid)references course(cid) on delete cascade
+)
+

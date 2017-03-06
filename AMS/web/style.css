@@ -1,0 +1,296 @@
+
+/*
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+*/
+.nav ul ul{
+    display: none;
+}
+.nav ul li:hover>ul
+{
+    display: block;
+}
+.nav ul
+{
+    padding: 0 40px;
+    border-radius: 20px;
+    list-style: none;
+    position: relative ;
+    display: inline-block;
+    background: linear-gradient( orangered,orangered 40%);
+    box-shadow: 10px 10px 19px rgba(0.15,0.15,0.15,0.15);
+}
+.nav ul li{float: start;}
+.nav ul li a{padding: 5px 30px 5px 30px;display: block;color: yellow; 
+             .nav ul li {position: relative;}
+            .nav ul li ul{position: absolute;top: 30px; left: 0px}
+}
+.nav ul li:hover
+{
+    background: #82050B;
+    background: linear-gradient(top,blue 0%,green 40%);
+    background: linear-gradient(top,blue 0%,green 40%);
+    background: linear-gradient(top,blue 0%,green 40%);
+}
+.nav ul li:hover a{
+    color: blue;
+    
+}
+.nav ul li:hover>ul{margin: 0px;padding: 0px;}
+.nav ul li:hover>ul li{float: none;display: block;}
+.nav ul li:hover>ul li a{color: yellowgreen;min-width: 150px;}
+.nav ul li:hover>ul li a:hover{color: springgreen}
+
+
+
+h1, h2, h3 {
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+	color: yellow;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-size: medium;
+        color: yellow;
+}
+
+h3 {
+	font-size: 1.6em;
+}
+
+p, ul, ol {
+	margin-top: 0;
+	line-height: normal;
+}
+
+ul, ol {
+}
+
+a {
+	text-decoration: yellow;
+	color: purple;
+}
+
+a:hover {
+}
+
+#wrapper {
+	width: 980px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+/* Header */
+
+#header {
+	clear: both;
+	width: 980px;
+	height: 370px;
+	margin: 30px auto 0px auto;
+	padding: 0px 0px 0px 0px;
+	background: url(images/img01.jpg) no-repeat left top;
+}
+
+
+/* Menu */
+
+#menu {
+	width: 980px;
+	height: 60px;
+	margin: 0px auto;
+	padding: 0px;
+	background: springgreen;
+}
+
+#menu ul {
+	margin: 0;
+	padding: 0px;
+	list-style: none;
+	line-height: normal;
+}
+
+#menu li {
+	float: left;
+	border-right: 1px solid  yellow; 
+}
+
+#menu a {
+	display: block;
+	height: 30px;
+	padding: 30px 40px 0px 40px;
+	text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: yellow;
+	border: none;
+}
+
+#menu a:hover, #menu .current_page_item a {
+	background: url(images/img02.jpg) repeat-x left top;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+#menu .current_page_item a {
+}
+
+/* Page */
+
+#page {
+	width: 940px;
+	margin: 0 auto;
+	padding: 0px 0px 0px 0px;
+}
+
+#page-bgtop {
+	padding: 20px 0px;
+}
+
+#page-bgbtm {
+}
+
+/* Content */
+
+#content {
+	float: right;
+	width: 580px;
+	padding: 30px 0px 0px 0px;
+}
+
+.post {
+	margin-bottom: 15px;
+}
+
+.post-bgtop {
+}
+
+.post-bgbtm {
+}
+
+.post .title {
+	height: 38px;
+	margin-bottom: 10px;
+	padding: 12px 0 0 0px;
+	letter-spacing: -.5px;
+	color: #82050B;
+}
+
+.post .title a {
+	color: #DDDDDD;
+	border: none;
+}
+
+.post .meta {
+	margin-bottom: 30px;
+	padding: 5px 0px 15px 0px;
+	text-align: left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+.post .meta .date {
+	float: left;
+}
+
+.post .meta .posted {
+	float: right;
+}
+
+.post .meta a {
+}
+
+.post .entry {
+	padding: 0px 0px 20px 0px;
+	padding-bottom: 20px;
+	text-align: justify;
+}
+
+.links {
+	height: 30px;
+	background: url(images/img05.jpg) no-repeat left 20px;
+	padding: 30px 0px 0px 30px;
+	font-size: 12px;
+	font-weight: bold;
+	color: yellow;
+}
+
+/* Sidebar */
+
+#sidebar {
+	float: left;
+	width: 340px;
+	margin: 0px;
+	padding: 0px 0px 0px 0px;
+	color: #787878;
+}
+
+#sidebar ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#sidebar li {
+	margin: 0;
+	padding: 0;
+}
+
+#sidebar li ul {
+	margin: 0px 0px;
+	padding-bottom: 30px;
+}
+
+#sidebar li li {
+	border-bottom: 1px solid #1E1E1E;
+	background: #121212;
+	margin: 0px 30px;
+	padding: 5px 0px;
+	border-left: none;
+}
+
+#sidebar li li a {
+	padding-left: 30px;
+	background: url(images/img03.jpg) no-repeat 15px 4px;
+}
+
+#sidebar li li span {
+	display: block;
+	margin-top: -20px;
+	padding: 0;
+	font-size: 11px;
+	font-style: italic;
+}
+
+#sidebar h2 {
+	height: 38px;
+	padding-left: 30px;
+	letter-spacing: -.5px;
+	font-size: 1.8em;
+	color: #FFFFFF;
+}
+
+#sidebar p {
+	margin: 0 0px;
+	padding: 0px 30px 20px 30px;
+	text-align: justify;
+}
+
+#sidebar a {
+	border: none;
+	color: #878787;
+}
+
+#sidebar a:hover {
+	text-decoration: underline;
+	color: #FFFFFF;
+}
